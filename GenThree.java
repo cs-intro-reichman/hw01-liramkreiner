@@ -7,8 +7,8 @@ public class GenThree
     public static void main(String[] args)
      {
         //getting the border for genrate the number
-        int bordermin = Integer.parseInt(args[0]);
-        int bordermax = Integer.parseInt(args[1]);
+        int bordermin = Math.min(Integer.parseInt(args[0]),Integer.parseInt(args[1]));
+        int bordermax = Math.max(Integer.parseInt(args[0]),Integer.parseInt(args[1]));
         int counter = 0;
         int minnumber = bordermax;
         while (counter<3)
